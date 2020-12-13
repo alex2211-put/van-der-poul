@@ -11,12 +11,12 @@ beta = 2
 
 def f(y, t):   # автоколебания
                 y1, y2 = y
-                return [y2, (gamma1-y2**beta)*y2 - omega_0 * y1]
+                return [y2, (-gamma1-(y1**2) * beta)*y2 - omega_0 * y1]
 
 
 def f_1(y, t):   # отсутствие колебаний
                 y1, y2 = y
-                return [y2, (gamma2-y2**beta)*y2 - omega_0 * y1]
+                return [y2, (-gamma2-(y1**2) * beta)*y2 - omega_0 * y1]
 
 
 t = np.linspace(0, 200, 1000)

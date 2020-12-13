@@ -9,12 +9,12 @@ omega_0 = 1
 beta = 2
 
 
-def f(y, t):   # автоколебания
+def f(y, t):   # отсутствие колебаний
                 y1, y2 = y
                 return [y2, (-gamma1-(y1**2) * beta)*y2 - omega_0 * y1]
 
 
-def f_1(y, t):   # отсутствие колебаний
+def f_1(y, t):   # автоколебания
                 y1, y2 = y
                 return [y2, (-gamma2-(y1**2) * beta)*y2 - omega_0 * y1]
 
